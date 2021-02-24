@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/registration-form-demo/static/css/main.a3d00d77.chunk.css",
-    "main.js": "/registration-form-demo/static/js/main.8aa734d5.chunk.js",
-    "main.js.map": "/registration-form-demo/static/js/main.8aa734d5.chunk.js.map",
+    "main.js": "/registration-form-demo/static/js/main.1fec05ea.chunk.js",
+    "main.js.map": "/registration-form-demo/static/js/main.1fec05ea.chunk.js.map",
     "runtime-main.js": "/registration-form-demo/static/js/runtime-main.f7a83b50.js",
     "runtime-main.js.map": "/registration-form-demo/static/js/runtime-main.f7a83b50.js.map",
     "static/js/2.6a772278.chunk.js": "/registration-form-demo/static/js/2.6a772278.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f7a83b50.js",
     "static/js/2.6a772278.chunk.js",
     "static/css/main.a3d00d77.chunk.css",
-    "static/js/main.8aa734d5.chunk.js"
+    "static/js/main.1fec05ea.chunk.js"
   ]
 }
