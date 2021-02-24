@@ -11,7 +11,7 @@ import UserDashboard from './components/userDashboard';
 function App() {
   return (
     <div>
-       <Router>
+       <Router basename={process.env.PUBLIC_URL}>
       <div>
        <Switch>
           <Route exact path="/">
