@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { USER_DETAILS_LOAD } from '../store/actions/user-action';
+import { useSelector } from 'react-redux';
 import "./form.css";
 const SignIn = () => {
     const history = useHistory();
+    const dispatch = useDispatch();
 
     const [userName_, setUsername] = useState("");
     const [password_, setPassword] = useState("");

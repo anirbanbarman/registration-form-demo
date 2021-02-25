@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import "./form.css";
+import { useDispatch } from 'react-redux';
+import { PIC_DATA_STORE } from '../store/actions/user-action';
+
 const SignUp = () => {
     const history = useHistory();
+    const dispatch = useDispatch();
 
     const [userName, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -10,12 +14,13 @@ const SignUp = () => {
     const [email, setEmail] = useState("");
     const handleSubmit = (event) => {
         event.preventDefault();
-        
+
         if (userName && password && phoneNumber && email) {
             console.log(userName, password, phoneNumber, email)
-        alert("User registered Successfuly")
-        alert("your Username and Password is " + JSON.stringify({ userName, password }))
-        localStorage.setItem("userDetails", JSON.stringify({ userName, password, phoneNumber, email }))
+            alert("User registered Successfuly")
+            alert("your Username and Password is " + JSON.stringify({ userName, password }))
+            // localStorage.setItem("userDetails", JSON.stringify({ userName, password, phoneNumber, email }))
+            dispatch(PIC_DATA_STORE({ userName, password, phoneNumber, email }))
             history.push("/")
 
         }
