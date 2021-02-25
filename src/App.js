@@ -1,6 +1,6 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -11,7 +11,7 @@ import UserDashboard from './components/userDashboard';
 function App() {
   return (
     <div>
-       <Router basename={process.env.PUBLIC_URL}>
+       <Router basename="/">
       <div>
        <Switch>
           <Route exact path="/">
